@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vulnerability Management</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<!--
+`body` tag options:
+
+  Apply one or more of the following classes to to the body tag
+  to get the desired effect
+
+  * sidebar-collapse
+  * sidebar-mini
+-->
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <img src="dist/img/user.png" alt="user" width=50 hieght=50 class="img-circle"> 
+      </li>
+      <li class="nav-item">
+        <figure>
+          <figcaption>admin</figcaption>
+          <img src="dist/img/img2.png" width=50 hieght=50/>       
+       </figure>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-test elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="dist/img/圖片7.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Management</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#  " class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./dashboard.html" class="nav-link">
+                  <i class="nav-icon fas fa-chart-pie"></i>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./scans.html" class="nav-link">
+                  <i class="nav-icon fas fa-edit"></i>
+                  <p>Scans</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./report.html" class="nav-link active">
+                  <i class="nav-icon fas fa-book""></i>
+                  <p>Reports</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Dashboard </h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="info-box">
+          <span class="info-box-icon bg-info elevation-1">
+            <img src="dist/img/img1.png" alt="all" width=40 height= 40 class="img-circles">
+          </span>
+
+          <div class="info-box-content">
+            <span class="info-box-text">Total</span>
+            <span class="info-box-number">
+              23
+            </span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <!-- /.col -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="info-box mb-3">
+          <span class="info-box-icon bg-danger elevation-1">
+            <img src="dist/img/img1.png" alt="all" width=40 height= 40 class="img-circles">
+          </span>
+
+          <div class="info-box-content">
+            <span class="info-box-text">HIGH</span>
+            <span class="info-box-number">9</span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <!-- /.col -->
+
+      <!-- fix for small devices only -->
+      <div class="clearfix hidden-md-up"></div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="info-box mb-3">
+          <span class="info-box-icon bg-warning elevation-1">
+            <img src="dist/img/img1.png" alt="all" width=40 height= 40 class="img-circles">
+          </span>
+
+          <div class="info-box-content">
+            <span class="info-box-text">MED</span>
+            <span class="info-box-number">14</span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <!-- /.col -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="info-box mb-3">
+          <span class="info-box-icon bg-success elevation-1">
+            <img src="dist/img/img1.png" alt="all" width=40 height= 40 class="img-circles">
+          </span>
+
+          <div class="info-box-content">
+            <span class="info-box-text">LOW</span>
+            <span class="info-box-number">0</span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <!-- /.col -->
+    </div>
+    <div class="row">
+      <!-- Left col -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Last 5 Scans</h3>
+
+            <div class="card-tools">
+              <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                <i class="fas fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-tool" data-card-widget="remove">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body p-0">
+            <ul class="products-list product-list-in-card pl-2 pr-2">
+              <li class="item">
+                <div class="product-img">
+                  <img src="dist/img/圖片4.png" alt="Product Image" class="img-size-50">
+                </div>
+                <div class="product-info">
+                  <a href="javascript:void(0)" class="product-title">JobName001
+                    <span class="badge badge-success float-right">Done</span></a>
+                    <span class="product-description">
+                      2022-12-03 16:01:44 ~ 2022-12-03 16:17:06
+                    </span>
+                  <span class="product-description">
+                    port scan
+                  </span>
+                </div>
+              </li>
+              <!-- /.item -->
+              <li class="item">
+                <div class="product-img">
+                  <img src="dist/img/圖片6.png" alt="Product Image" class="img-size-50">
+                </div>
+                <div class="product-info">
+                  <a href="javascript:void(0)" class="product-title">JobName000
+                    <span class="badge badge-danger float-right">Failed</span>
+                    <img src="dist/img/img3.png" width="20" height="20"></a>
+                    <div class="row">
+                      <div>
+                        <span class="product-description">
+                          2022-12-02 06:20:16 ~ 2022-12-02 6:21:06
+                        </span>
+                        <span class="product-description">
+                          system scan, service scan
+                        </span>
+                      </div>
+                    </div>
+                    
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- /.card-body -->
+          <div class="card-footer text-center">
+            <a href="javascript:void(0)" class="uppercase">View All Scans</a>
+          </div>
+          <!-- /.card-footer -->
+        </div>
+       
+      </div>
+      <!-- /.col -->
+
+      <div class="col-md-6">
+       
+        <!-- PRODUCT LIST -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Last 5 Reports</h3>
+
+            <div class="card-tools">
+              <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                <i class="fas fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-tool" data-card-widget="remove">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body p-0">
+            <ul class="products-list product-list-in-card pl-2 pr-2">
+              <li class="item">
+                <div class="product-img">
+                  <img src="dist/img/圖片3.png" alt="Product Image" class="img-size-50">
+                </div>
+                <div class="product-info">
+                  <a href="javascript:void(0)" class="product-title">JobName001 Report
+                    <span class="badge badge-warning float-right">Download</span></a>
+                    <span class="product-description">
+                      2022-12-03 16:01:44 ~2022-12-03 16:17:06
+                    </span>
+                
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- /.card-body -->
+          <div class="card-footer text-center">
+            <a href="javascript:void(0)" class="uppercase">View All Products</a>
+          </div>
+          <!-- /.card-footer -->
+        </div>
+        <!-- /.card -->
+      </div>
+      <!-- /.col -->
+
+
+    </div>
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="dist/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard3.js"></script>
+</body>
+</html>

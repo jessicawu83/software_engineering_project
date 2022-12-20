@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vulnerability Management</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css"/>
+</head>
+<!--
+`body` tag options:
+
+  Apply one or more of the following classes to to the body tag
+  to get the desired effect
+
+  * sidebar-collapse
+  * sidebar-mini
+-->
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <img src="dist/img/user.png" alt="user" width=50 hieght=50 class="img-circle"> 
+      </li>
+      <li class="nav-item">
+        <figure>
+          <figcaption>admin</figcaption>
+          <img src="dist/img/img2.png" width=50 hieght=50/>       
+       </figure>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="dist/img/圖片7.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Management</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+               <li class="nav-item menu-open">
+                <a href="#  " class="nav-link active">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>
+                    Dashboard
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./dashboard.html" class="nav-link">
+                      <i class="nav-icon fas fa-chart-pie"></i>
+                      <p>Dashboard</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./scans.html" class="nav-link">
+                      <i class="nav-icon fas fa-edit"></i>
+                      <p>Scans</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./report.html" class="nav-link active">
+                      <i class="nav-icon fas fa-book""></i>
+                      <p>Reports</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+          
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Report </h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Report</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+
+    <div>
+      <table id="demo_datatables"  class="display table-bordered  table-hover" style="width:100%;">
+        <thead>
+            <th class="text-center">Id</th>
+            <th class="text-center">Job Name</th>
+            <th class="text-center">Start Time</th>
+            <th class="text-center">End Time</th>
+            <th class="text-center">Scan Items</th>
+            <th class="text-center">User</th>
+            <th class="text-center">Report</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                  JobName001
+                </td>
+                <td>
+                  2022-12-03 16:01:44
+                </td>
+                <td>
+                  2022-12-03 16:17:06
+                </td>
+                <td>
+                  Port Scan
+                </td>
+                <td>
+                  admin
+                </td>
+                <td>
+                  <img src="dist/img/圖片3.png" alt="Product Image" class="img-size-50" id="report" name="report">
+                </td>
+            </tr>
+        </tbody>
+     </table>
+    </div>
+    <!-- /.d-flex -->
+ 
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="dist/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard3.js"></script>
+
+
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
+
+<script src="dist/js/main.js"></script>
+</body>
+</html>
