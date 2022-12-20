@@ -6,6 +6,11 @@ $(document).ready( function () {
 		alert("下載完成")
 	});
 
+    $("#createjob").click(function(){
+		
+		alert("創建成功")
+	});
+
     var dataset = [
         ["High","port scan","192.168.56.2","Windows","cpe:/a:postgresql:postgresql:8.3","CVE-2010-1447","8.5","syn-ack","https://vulners.com/cve/CVE-2010-1447"],
         ["High","port scan","192.168.56.2","Windows","cpe:/a:postgresql:postgresql:8.3","CVE-2010-1169","8.5","syn-ack","https://vulners.com/cve/CVE-2010-1169"],

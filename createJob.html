@@ -105,13 +105,13 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Scan Process</h1>
+            <h1 class="m-0">Create Job</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active">Scans</li>
-              <li class="breadcrumb-item active">JobName002_ScanProcess</li>
+              <li class="breadcrumb-item active">CreateJob</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -128,23 +128,15 @@
               <div class="form-group row">
                 <label for="inputName" class="col-sm-2 col-form-label">Job Name</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputName" placeholder="Name" value="JobName002" disabled="true">
+                  <input type="text" class="form-control" id="inputName" placeholder="Name" value="">
                 </div>
               </div>
             </li>
             <li>
               <div class="form-group row">
-                <label for="inputName" class="col-sm-2 col-form-label">Start Time</label>
+                <label for="inputName" class="col-sm-2 col-form-label">Job Owner</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputName" placeholder="Name" value="2022-12-17 12:30:56" disabled="true">
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="form-group row">
-                <label for="inputName" class="col-sm-2 col-form-label">End Time</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputName"  value="" disabled="true">
+                  <input type="text" class="form-control" id="inputName" placeholder="Name" value="admin" disabled="true">
                 </div>
               </div>
             </li>
@@ -152,8 +144,73 @@
               <div class="form-group row">
                 <label for="inputName" class="col-sm-2 col-form-label">Scan Item</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputName" placeholder="Name" value="port scan" disabled="true">
-                </div>
+                  <div class="card">
+                   <ul>
+                     <br>
+                     <div>
+                      <input type="checkbox" id="scales" name="scales" checked>
+                      <label for="scales">All Scan</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="scales" name="scales" checked>
+                      <label for="scales">Port Scan</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="scales" name="scales" checked>
+                      <label for="scales">Service Scan</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="scales" name="scales" checked>
+                      <label for="scales">System Scan</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="scales" name="scales" checked>
+                      <label for="scales">Vulnerability Scan</label>
+                    </div>
+                   </ul>
+                  </div>
+                 </div>
+              </div>
+            </li>
+            <li>
+              <div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label">Send Report</label>
+                <div class="col-sm-9">
+                  <div class="card">
+                   <ul>
+                     <br>
+                     <div>
+                      <input type="radio" id="no" name="send" value="no"
+                             checked>
+                      <label for="no">No</label>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-10">
+                        <input type="radio" id="yes" name="send" value="yes">
+                        <label for="yes">Yes</label>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-success float-right" id="add">+</button>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="card">
+                      <div class="card-tools">
+                        <div class="row">
+                          <div class="col-md-10">
+                            <input type="email" class="form-control" id="email" placeholder="email" disabled="true">
+                          </div>
+                          <div>
+                            <button type="button" class="btn btn-danger float-right" id="remove">x</button>
+                          </div>
+                        </div>
+                       
+                      </div>
+                    </div>
+                   </ul>
+                  </div>
+                 </div>
               </div>
             </li>
           </ul>
@@ -169,18 +226,26 @@
           <ul >
             <li>
               <div class="form-group row">
-                <label for="inputName" class="col-sm-2 col-form-label">Job Owner</label>
+                <label for="inputName" class="col-sm-2 col-form-label">Job Excute Time</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputName" placeholder="Name" value="admin" disabled="true">
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="form-group row">
-                <label for="inputName" class="col-sm-2 col-form-label">Estimated Time</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputName" placeholder="Name" value="1 hr 20 mins" disabled="true">
-                </div>
+                  <div class="card">
+                   <ul>
+                     <br>
+                     <div>
+                      <input type="radio" id="right_now" name="excute" value="right_now"
+                             checked>
+                      <label for="right_now">立即執行</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="schedule" name="excute" value="schedule"
+                             >
+                      <label for="schedule">Schedule Time</label>
+                      <input type="text" class="form-control" id="excute_time" placeholder="excute_time" disabled="true">
+                    </div>
+                    <br>
+                   </ul>
+                  </div>
+                 </div>
               </div>
             </li>
             <li>
@@ -193,16 +258,45 @@
                     <li>
                       <div class="form-group row">
                         <label for="inputName" class="col-sm-2 col-form-label">Host</label>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="inputName" placeholder="Name" value="192.168.56.2" disabled="true">
+                        <div class="card">
+                          <div class="card-tools">
+                            <div>
+                              <button type="button" class="btn btn-success float-right" id="add">+</button>
+                            </div>
+                          </div>
+                          <div class="card-tools">
+                            <div class="row">
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputName" placeholder="Name" value="192.168.56.2" >
+                              </div>
+                              <div>
+                                <button type="button" class="btn btn-danger float-right" id="remove">x</button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
+                        
                       </div>
                     </li>
                     <li>
                       <div class="form-group row">
                         <label for="inputName" class="col-sm-2 col-form-label">IP Range</label>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control"  disabled="true">
+                        <div class="card">
+                          <div class="card-tools">
+                            <div>
+                              <button type="button" class="btn btn-success float-right" id="add">+</button>
+                            </div>
+                          </div>
+                          <div class="card-tools">
+                            <div class="row">
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputName"  >
+                              </div>
+                              <div>
+                                <button type="button" class="btn btn-danger float-right" id="remove">x</button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </li>
@@ -213,46 +307,28 @@
             </li>
             
           </ul>
-        </div>
-      </div>
-      <!-- /.col -->
-    </div>
 
-
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-tools">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+          
+          <div class="row">
+            <div class="col-sm-5"></div>
+            <div class="col-sm-2">
+              <button type="button" class="btn  btn-danger float-right" >Cancel</button>
+            </div>
+            <div class="col-sm-2">
+              <button type="button" class="btn btn-secondary float-right">Reset</button>
+            </div>
+            <div class="col-sm-2">
+              <button type="button" class="btn btn-primary float-right" id ="createjob" name="createjob">Create</button>
+            </div>
           </div>
+          <br>
+          
         </div>
+       
       </div>
-    </div>
-    <br>
 
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-tools">
-          <textarea name="mytext"
-          rows="6"
-          cols="170"
-          disabled="ture">
-
-          Starting Nmap 7.93 ( https://nmap.org ) at 2022-12-17 12:30:56 台北標準時間
-          NSOCK ERROR [0.2410s] ssl_init_helper(): OpenSSL legacy provider failed to load.
-          NSE: Loaded 155 scripts for scanning.
-          NSE: Script Pre-scanning.
-          Initiating NSE at 22:27
-          Completed NSE at 22:27, 0.00s elapsed
-          Initiating NSE at 22:27
-          Completed NSE at 22:27, 0.00s elapsed
-          Initiating NSE at 22:27
-          Completed NSE at 22:27, 0.00s elapsed
-          Initiating Ping Scan at 22:27
-          </textarea>
-        </div>
-      </div>
-      <!-- /.card -->
+     
+      <!-- /.col -->
     </div>
 
   </div>
