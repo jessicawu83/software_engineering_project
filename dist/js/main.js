@@ -1,5 +1,11 @@
+
 $(document).ready( function () {
     $('#demo_datatables').DataTable();
+
+    $("#logout").click(function(){
+		
+		alert("使用者登出")
+	});
 
     $("#report").click(function(){
 		
